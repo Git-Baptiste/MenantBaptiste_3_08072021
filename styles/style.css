@@ -6,8 +6,12 @@
       COULEUR TERTIAIRE: Vert  #99E2D0
 
 */
+
+
+
 body {
       margin: 0;
+      font-family: 'roboto', sans-serif;
 }
 
 
@@ -18,10 +22,14 @@ body {
 
 .restaurants {
       background-color: rgb(247, 245, 245);
+
 }
 
-
-
+.restaurants h2 {
+      padding:40px 0 0 5%;
+      font-size: 1.5em;
+      font-weight: 700;
+}
 
 
 /* Mise en page des cartes de restaurant */
@@ -34,9 +42,17 @@ body {
       flex-wrap:wrap;
     }
 
+
+.restaurants h2 {
+      margin: 40px 0 10px 0;
+      font-size: 2em;
+      font-weight: 700;
+
+}
+
 .card {
       margin : auto;
-      width: 100%;
+      width: auto;
       max-width: 400px;
       overflow : hidden;
       border-radius : 15px;
@@ -62,7 +78,24 @@ body {
       object-fit:cover;
     }
     
-.icon {
+
+.card__description {
+      padding: 1em;
+    }
+    
+.card__description h3,p {
+      margin: 0;
+      font-size: 20px;
+    }
+
+.card__description p {
+      font-weight: 300;
+}
+
+.card__description a:hover {
+      background-color: SteelBlue;
+    }
+    .icon {
       position:absolute;
       top: 13px;
       right: 13px;
@@ -73,16 +106,6 @@ body {
       background-color: rgb(153, 226, 208);
       padding:5px 15px;
       border-radius: 2px;
-    }
-
-.card__description {
-      padding: 1em;
-    }
-    
-.card__description h3,p {
-      margin: 0;
-    }
-
-.card__description a:hover {
-      background-color: SteelBlue;
+      font-size: 18px;
+      font-weight: 500;
     }
