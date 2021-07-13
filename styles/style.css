@@ -86,7 +86,7 @@ body {
 
 
 .explore h1 {
-      max-width: 90%;
+      max-width: 70%;
       margin: 10px auto;
 }
 
@@ -98,8 +98,9 @@ body {
 }
 
 .explore button {
-      width: 250px;
+      width: 230px;
       height: 50px;
+      margin: 20px auto;
       border-radius: 100px;
       border-style: none;
       background: linear-gradient(165deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
