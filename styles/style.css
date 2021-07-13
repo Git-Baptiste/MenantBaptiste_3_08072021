@@ -115,6 +115,64 @@ body {
 
 /* Fin de la mise en page de EXPLORE */
 
+/* Mise en page de la section FUNCTION */
+
+.step {
+      width: 90%;
+      max-width: 325px;
+      height: 70px;
+      margin: 30px auto;
+      display: flex;
+      align-items: center;
+      background: rgb(247, 245, 245); ;
+      border-radius: 20px;
+      font-size: 16px;
+      font-weight: 600;
+      box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.number {
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      margin: -12px;
+      
+}
+
+.number p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(147,86,220,1);
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      border-radius: 100%;
+      color: white;
+      font-size: 15px;
+      font-weight: 300;
+}
+
+.step-logo {
+      padding-left: 30px;
+}
+
+.step-logo i {
+      font-size: 18px;
+      color: rgb(105, 105, 105);
+}
+
+.desc {
+      padding-left: 18px;
+      
+}
+
+.desc p {
+      margin: 0;
+}
+
+/* Fin de la mise en page de FUNCTION */
+
 /* Mise en page de la section RESTAURANTS */
 
 .restaurants {
