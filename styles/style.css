@@ -12,7 +12,13 @@
 body {
       margin: 0;
       font-family: 'roboto', sans-serif;
+      
 }
+ body h1, h2{
+      font-size: 1.5em;
+      font-weight: 700;
+      margin-top: 0;
+ }
 
 
 
@@ -69,6 +75,44 @@ body {
 
 /* Fin de mise en page de LOCALISATION */
 
+/* Début de la mise en page de EXPLORE */
+
+
+.explore {
+      padding: 40px 0;
+      text-align: center;
+      background-color: rgb(248, 248, 248);
+}
+
+
+.explore h1 {
+      max-width: 90%;
+      margin: 10px auto;
+}
+
+.explore h2 {
+      max-width: 90%;
+      margin: 20px auto;
+      font-size: 1.1em;
+      font-weight: 300;
+}
+
+.explore button {
+      width: 250px;
+      height: 50px;
+      border-radius: 100px;
+      border-style: none;
+      background: linear-gradient(165deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+      color: white;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      box-shadow:4px 4px 10px rgba(0,0,0, .2);
+}
+
+
+/* Fin de la mise en page de EXPLORE */
+
 /* Mise en page de la section RESTAURANTS */
 
 .restaurants {
@@ -77,8 +121,6 @@ body {
 
 .restaurants h2 {
       padding:40px 0 0 5%;
-      font-size: 1.5em;
-      font-weight: 700;
 }
 
 
@@ -92,12 +134,6 @@ body {
       flex-wrap:wrap;
     }
 
-
-.restaurants h2 {
-      margin: 40px 0 10px 0;
-      font-size: 2em;
-      font-weight: 700;
-}
 
 .card {
       margin : auto;
