@@ -23,7 +23,9 @@ body {
  }
 
 
-
+body a {
+      text-decoration: none;
+}
 
 
 /* Mise en page du TITRE */
