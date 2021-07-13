@@ -16,13 +16,63 @@ body {
 
 
 
+/* Mise en page du TITRE */
+
+.header-title  {
+      box-shadow:0 0 6px rgba(0,0,0, 1);
+}
+
+#logo {
+      width: 55%;
+      display: block;
+      margin: auto;
+      padding: 20px 0 15px 0;    
+}
 
 
-/* Mis en page de la section RESTAURANTS */
+/* Fin de mise en page du TITRE */
+
+/* Début de mise en page de LOCALISATION */
+
+.localisation {
+      height: 3em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      color: rgb(65, 65, 65);
+      background-color: rgba(189, 189, 189, 0.212);
+      
+}
+
+.localisation input{
+      width: 50%;
+      max-width: 200px;
+      height: 100%;
+      border-style: none;
+      background-color: transparent;
+      text-align: center;
+}
+
+.localisation input::placeholder {
+      font-size: 18px;
+      font-weight: 600;
+      color: rgb(65, 65, 65);
+}
+
+
+.localisation button {
+      display: none;
+}
+
+
+
+/* Fin de mise en page de LOCALISATION */
+
+/* Mise en page de la section RESTAURANTS */
 
 .restaurants {
       background-color: rgb(247, 245, 245);
-
 }
 
 .restaurants h2 {
@@ -47,7 +97,6 @@ body {
       margin: 40px 0 10px 0;
       font-size: 2em;
       font-weight: 700;
-
 }
 
 .card {
@@ -109,3 +158,8 @@ body {
       font-size: 18px;
       font-weight: 500;
     }
+
+
+    /* Fin de mis en page des cartes de restaurants */
+
+    /* Début de mise en page de */
