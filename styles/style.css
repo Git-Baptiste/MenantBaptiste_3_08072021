@@ -117,16 +117,29 @@ body {
 
 /* Mise en page de la section FUNCTION */
 
+.function {
+      margin-bottom: 60px;
+}
+
+.function h2 {
+      padding:40px 0 0 5%;
+}
+
+.container__step {
+      display: flex;
+      flex-wrap: wrap;
+}
+
 .step {
-      width: 90%;
-      max-width: 325px;
+      width: 85%;
+      max-width: 350px;
       height: 70px;
-      margin: 30px auto;
+      margin: 15px auto;
       display: flex;
       align-items: center;
       background: rgb(247, 245, 245); ;
       border-radius: 20px;
-      font-size: 16px;
+      font-size: 18px;
       font-weight: 600;
       box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
 }
@@ -149,8 +162,8 @@ body {
       width: 100%;
       border-radius: 100%;
       color: white;
-      font-size: 15px;
-      font-weight: 300;
+      font-size: 16px;
+      font-weight: 400;
 }
 
 .step-logo {
@@ -177,6 +190,7 @@ body {
 
 .restaurants {
       background-color: rgb(247, 245, 245);
+      margin-bottom: 60px;
 }
 
 .restaurants h2 {
@@ -228,9 +242,9 @@ body {
       padding: 1em;
     }
     
-.card__description h3,p {
+.card__description h3 , .card__description p {
       margin: 0;
-      font-size: 20px;
+      font-size: 18px;
     }
 
 .card__description p {
