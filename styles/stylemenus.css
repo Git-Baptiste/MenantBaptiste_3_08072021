@@ -1,0 +1,204 @@
+/*   
+      PALETTES DE COULEURS UTILISEES
+
+      COULEUR PRIMAIRE: Violet #9356DC
+      COULEUR SECONDAIRE: Rose #FF79DA
+      COULEUR TERTIAIRE: Vert  #99E2D0
+
+*/
+
+
+body {
+      margin: 0;
+      font-family: 'roboto', sans-serif;
+       
+}
+
+body h1 {
+      margin: 0;
+}
+
+
+body a {
+      text-decoration: none;
+      /* color: black; */
+}
+
+/* main a:visited {
+      text-decoration: none;
+      color: black;
+} */
+
+
+
+
+/* Mise en page du HEADER */
+
+.header-title  {
+      box-shadow:0 0 6px rgba(0,0,0, 1);
+}
+
+#logo {
+      width: 55%;
+      max-width: 350px;
+      display: block;
+      margin: auto;
+      padding: 20px 0 15px 0;    
+}
+
+      /* Début flèche de retour à l'accueil */
+
+
+
+       /* Fin flèche de retour à l'accueil */
+
+/* Fin de mise en page du HEADER */
+
+
+
+
+/* Début de la mise en page du MENU */
+main {
+      background-color: rgb(236, 236, 236);
+}
+
+
+.menu-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100px;
+      width: 90%;
+      margin: auto;
+
+
+}
+
+.entree {
+      width: 90%;
+      margin: auto;
+      padding-top: 20px;
+}
+
+.entree h2 {
+      font-size: 17px;
+      font-weight: 400;
+}
+
+.entree h2:after {
+      display: flex;
+      content: "";
+      border-bottom: 3px solid rgb(153, 226, 208, 1);
+      height: 0.3em;
+      width: 40px;
+      
+
+      } 
+
+.menu {
+      margin: 20px 0;
+}
+
+.desc {
+
+      max-width: 350px;
+      margin: auto;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow:4px 4px 10px rgba(0,0,0, .2);;
+      padding: 10px 25px 10px 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+}
+
+.desc p {
+      margin: 2px 0;
+
+}
+
+.desc > p {
+      font-size: 18px;
+      font-weight: 500;
+}
+
+.desc__menu {
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+}
+
+.compo {
+      font-weight: 300;
+}
+
+.prix {
+      font-weight: 600;
+      color: rgb(65, 65, 65);
+}
+
+
+/* Fin de la mise en page du MENU */
+
+
+/* Début mise en page du BOUTON */
+
+.commande {
+      
+      
+}
+
+.pink-button {
+      width: 200px;
+      height: 50px;
+      border-radius: 100px;
+      border-style: none;
+      background: linear-gradient(165deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+      color: white;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      box-shadow:4px 4px 10px rgba(0,0,0, .2);
+
+}
+/* Fin de mise en page du BOUTON */
+
+
+
+
+/* Début de mise en page du FOOTER*/
+
+
+footer {
+      background: rgb(65, 65, 65);
+      color: white;
+      padding: 30px 0 30px 30px;
+}
+
+/* #logo_footer {
+      Manque les modifications du svg
+}  */
+
+footer ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+}
+
+footer ul li {
+      padding: 5px 0;
+}
+footer ul a {
+      text-decoration: none;
+      color: white;
+}
+footer ul a:hover {
+      color: #FF79DA;
+}
+
+.fa-utensils, .fa-hands-helping {
+      padding-right: 20px;
+}
+
+/* Fin de mise en page du FOOTER*/
+
