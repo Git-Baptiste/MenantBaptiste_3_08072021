@@ -24,10 +24,9 @@ body a {
       /* color: black; */
 }
 
-/* main a:visited {
+body a:visited {
       text-decoration: none;
-      color: black;
-} */
+}
 
 
 
@@ -36,7 +35,27 @@ body a {
 
 .header-title  {
       box-shadow:0 0 6px rgba(0,0,0, 1);
+      position: relative;
 }
+
+      /* Début flèche de retour à l'accueil */
+
+.fleche {
+      font-size: 25px;
+      width: 20%;
+      height: 100%;
+      position: absolute;
+      
+}
+
+.fleche a {
+      display: block; 
+}
+
+
+
+
+      /* Fin flèche de retour à l'accueil */
 
 #logo {
       width: 55%;
@@ -46,11 +65,7 @@ body a {
       padding: 20px 0 15px 0;    
 }
 
-      /* Début flèche de retour à l'accueil */
-
-
-
-       /* Fin flèche de retour à l'accueil */
+      
 
 /* Fin de mise en page du HEADER */
 
@@ -144,14 +159,15 @@ main {
 /* Début mise en page du BOUTON */
 
 .commande {
-      
-      
+      padding: 40px 0 90px 0;
+      text-align: center;
 }
 
 .pink-button {
       width: 200px;
       height: 50px;
       border-radius: 100px;
+      padding: 0;
       border-style: none;
       background: linear-gradient(165deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
       color: white;
@@ -196,6 +212,10 @@ footer ul a:hover {
       color: #FF79DA;
 }
 
+.fa {
+      height: auto;
+      width: 15px;
+}
 .fa-utensils, .fa-hands-helping {
       padding-right: 20px;
 }
