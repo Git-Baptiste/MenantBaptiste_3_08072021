@@ -21,7 +21,7 @@ body h1 {
 
 body a {
       text-decoration: none;
-      /* color: black; */
+      color: rgb(65, 65, 65);
 }
 
 body a:visited {
@@ -33,6 +33,7 @@ body a:visited {
 
 /* Mise en page du HEADER */
 
+
 .header-title  {
       box-shadow:0 0 6px rgba(0,0,0, 1);
       position: relative;
@@ -41,18 +42,19 @@ body a:visited {
       /* Début flèche de retour à l'accueil */
 
 .fleche {
-      font-size: 25px;
-      width: 20%;
-      height: 100%;
       position: absolute;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      margin: 0;
+      font-size: 22px;
       
 }
 
 .fleche a {
-      display: block; 
+      display: block;
+      margin-left: 20px;
 }
-
-
 
 
       /* Fin flèche de retour à l'accueil */
@@ -65,6 +67,16 @@ body a:visited {
       padding: 20px 0 15px 0;    
 }
 
+.background_img {
+      width: 100%;
+      height: auto;
+}
+
+.background_img img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+}
       
 
 /* Fin de mise en page du HEADER */
@@ -75,6 +87,8 @@ body a:visited {
 /* Début de la mise en page du MENU */
 main {
       background-color: rgb(236, 236, 236);
+      border-radius: 50px 50px 0 0;
+      margin: 0;
 }
 
 
