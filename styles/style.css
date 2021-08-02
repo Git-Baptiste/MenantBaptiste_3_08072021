@@ -24,12 +24,12 @@ body {
 
 body a {
       text-decoration: none;
-      /* color: black; */
+      color: black;
 }
 
 main a:visited {
       text-decoration: none;
-      color: black;
+      /* color: black; */
 }
 
 
@@ -221,20 +221,20 @@ main a:visited {
 .container {
       width: 90%;
       margin: auto;
-      display :flex;
-      justify-content:space-between;
-      flex-wrap:wrap;
+      /* display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; */
     }
 
 
 .card {
       margin : auto;
       width: auto;
-      max-width: 400px;
+      max-width: 350px;
       overflow : hidden;
       border-radius : 15px;
       background : white;
-      margin-top:20px;
+      margin-top: 20px;
       transition: all .2s;
       box-shadow:5px 5px 15px rgba(0,0,0, .3);
     }
@@ -258,6 +258,8 @@ main a:visited {
 
 .card__description {
       padding: 1em;
+      display: flex;
+      justify-content: space-between;
     }
     
 .card__description h3 , .card__description p {
@@ -286,6 +288,29 @@ main a:visited {
       font-size: 18px;
       font-weight: 500;
     }
+
+.heart {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      width: 50px;
+
+}
+
+.heart path {
+      fill: white;
+      fill-opacity: 0%;
+
+}
+
+.heart path:hover {
+      fill: url(#myGradient);
+      stroke-width: 0;
+      transform-origin: center;
+      fill-opacity: 100%;
+      transition: all 1s cubic-bezier(0.26, 0.04, 0.17, 0.95);
+}
 
 
 /* Fin de mis en page des cartes de restaurants */
