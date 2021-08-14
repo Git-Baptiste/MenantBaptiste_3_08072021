@@ -189,7 +189,7 @@ main {
       }
       100% {
             transform: translateY(0);
-            opacity: 100%;
+            opacity: 1;
       }
  
 }
@@ -204,7 +204,7 @@ main {
       }
       100% {
             transform: translateY(0);
-            opacity: 100%;
+            opacity: 1;
       }
  
 }
@@ -295,9 +295,9 @@ main {
       border-radius: 0 15px 15px 0;
       top: 0;
       right: -66px;
-} */
+}
 
-/* .desc:hover::after {
+.desc:hover::after {
       right: 0;
       transition: 0.2s ease;
 } */
