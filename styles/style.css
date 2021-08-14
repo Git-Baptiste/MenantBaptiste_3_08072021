@@ -45,8 +45,19 @@ main a:visited {
       align-items: center;
       background: rgb(29, 29, 29);
       z-index: 10;
-      animation: opacity 3s;
-      animation-fill-mode: forwards;
+      -webkit-animation: opacity 3s;
+              animation: opacity 3s;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes opacity {
+      70% {
+            opacity: 1;
+      }
+      100% {
+            display: none;
+      }
 }
 
 @keyframes opacity {
@@ -59,7 +70,24 @@ main a:visited {
 }
 
 .loader {
-      animation: spin 2s linear infinite;
+      -webkit-animation: spin 2s linear infinite;
+              animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+      0% {
+            transform: rotate(0deg);
+            stroke: #9356DC;
+      }
+
+      50% {
+            stroke: #FF79DA;
+      }
+
+      100% {
+            transform: rotate(360deg);
+            stroke: #9356DC;
+      }
 }
 
 @keyframes spin {
@@ -116,6 +144,30 @@ main a:visited {
       border-style: none;
       background-color: transparent;
       text-align: center;
+}
+
+.localisation input::-webkit-input-placeholder {
+      font-size: 18px;
+      font-weight: 600;
+      color: rgb(65, 65, 65);
+}
+
+.localisation input::-moz-placeholder {
+      font-size: 18px;
+      font-weight: 600;
+      color: rgb(65, 65, 65);
+}
+
+.localisation input:-ms-input-placeholder {
+      font-size: 18px;
+      font-weight: 600;
+      color: rgb(65, 65, 65);
+}
+
+.localisation input::-ms-input-placeholder {
+      font-size: 18px;
+      font-weight: 600;
+      color: rgb(65, 65, 65);
 }
 
 .localisation input::placeholder {
@@ -304,7 +356,8 @@ main a:visited {
 .card img {
       width: 350px;
       height: 200px;
-      object-fit:cover;
+      -o-object-fit:cover;
+         object-fit:cover;
     }
     
 
