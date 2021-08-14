@@ -481,4 +481,8 @@ footer ul a:hover {
       .entree h2:after {
             margin: auto;
       }
+
+      footer {
+            transform: translateY(50px)
+      }
 }
