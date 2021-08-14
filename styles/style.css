@@ -460,3 +460,29 @@ footer ul a:hover {
 
 
 /* Fin de mise en page du FOOTER*/
+
+
+@media (min-width: 768px) {
+
+      footer {
+      
+            text-align: center;
+      
+      }
+
+
+}
+
+
+@media (min-width: 1024px) {
+
+      main {
+            min-height: 100vh;
+      }
+
+      .card {
+            margin: 10px;
+      }
+
+
+}
