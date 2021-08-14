@@ -33,10 +33,16 @@ body a:visited {
 
 /* Mise en page du HEADER */
 
+header {
+      z-index: -1;
+}
+
 
 .header-title  {
       box-shadow:0 0 6px rgba(0,0,0, 1);
       position: relative;
+
+      
 }
 
       /* Début flèche de retour à l'accueil */
@@ -68,12 +74,11 @@ body a:visited {
 
 .background_img {
       width: 100%;
-      height: auto;   
+      max-height: 250px;
 }
 
 .background_img img {
-      max-width: 100%;
-      max-height: 100%;
+      width: 100%;
 }
       
 
@@ -86,6 +91,34 @@ body a:visited {
 main {
       background-color: rgb(236, 236, 236);
       border-radius: 50px 50px 0 0;
+      z-index: 1;
+      transform: translateY(-50px);
+}
+
+
+/* mise en page du coeur et de son animation */
+
+.heart {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      width: 50px;
+
+}
+
+.heart path {
+      fill: white;
+      fill-opacity: 0%;
+
+}
+
+.heart path:hover {
+      fill: url(#myGradient);
+      stroke-width: 0;
+      transform-origin: center;
+      fill-opacity: 100%;
+      transition: all 0.6s cubic-bezier(0.26, 0.04, 0.17, 0.95);
 }
 
 
@@ -96,8 +129,12 @@ main {
       height: 100px;
       width: 90%;
       margin: auto;
+}
 
-
+.menu-title h1 {
+      font-family: 'Shrikhand', cursive;
+      font-weight: 400;
+      font-size: 26px;
 }
 
 .entree {
@@ -117,26 +154,115 @@ main {
       border-bottom: 3px solid rgb(153, 226, 208, 1);
       height: 0.3em;
       width: 40px;
-      
+} 
 
-      } 
+.entree:nth-child(3) {
+      opacity: 0;
+      animation: fade-in 1s ease;
+      animation-fill-mode: forwards;
+      animation-delay: 0.5s;
+}
+
+.entree:nth-child(4) {
+      opacity: 0;
+      animation: fade-in 1s ease;
+      animation-fill-mode: forwards;
+      animation-delay: 1s;
+}
+
+
+
+
+@keyframes fade-in {
+      0% {
+            transform: translateY(50px);
+            opacity: 0;
+      }
+      100% {
+            transform: translateY(0);
+            opacity: 100%;
+      }
+ 
+}
 
 .menu {
       margin: 20px 0;
+      opacity: 0;
+      animation: fade-in 1s ease;
+      animation-fill-mode: forwards;
+
 }
 
-.desc {
+.menu:nth-child(3) {
+      animation-delay: 0.1s;
+}
 
+.menu:nth-child(4) {
+      animation-delay: 0.2s;
+}
+
+.menu:nth-child(5) {
+      animation-delay: 0.3s;
+}
+
+
+.desc {
+      position: relative;
       max-width: 350px;
       margin: auto;
       background-color: white;
       border-radius: 15px;
-      box-shadow:4px 4px 10px rgba(0,0,0, .2);;
+      box-shadow:4px 4px 10px rgba(0,0,0, .2);
       padding: 10px 25px 10px 15px;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      overflow: hidden;
 }
+
+
+.check {
+      content: "";
+      position: absolute;
+      height: 69px;
+      width: 65px;
+      background-color: #99E2D0;;
+      border-radius: 0 15px 15px 0;
+      top: 0;
+      right: -66px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      
+}
+
+
+@keyframes spin {
+      from {
+            transform: rotate(0deg);
+      }
+      to {
+            transform: rotate(360deg);
+      }
+}
+
+/* .desc::after {
+      position: absolute;
+      height: 69px;
+      width: 65px;
+      background-color: #99E2D0;
+      border-radius: 0 15px 15px 0;
+      top: 0;
+      right: -66px;
+} */
+
+/* .desc:hover::after {
+      right: 0;
+      transition: 0.2s ease;
+} */
+
 
 .desc p {
       margin: 2px 0;
@@ -161,6 +287,28 @@ main {
 .prix {
       font-weight: 600;
       color: rgb(65, 65, 65);
+}
+
+.desc:hover .check{
+      right: 0;
+      transition: all 0.4s;
+
+}
+
+.desc:hover .prix {
+      padding-right: 50px;
+}
+
+
+.desc:hover .nom, .compo {
+      margin-right: 50px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+}
+
+.desc:hover .fa-check-circle {
+      animation: spin 0.6s ease;
 }
 
 
@@ -188,6 +336,13 @@ main {
       box-shadow:4px 4px 10px rgba(0,0,0, .2);
 
 }
+
+.pink-button:hover {
+      background: linear-gradient(165deg, rgba(255, 121, 218, 0.9) 0%, rgba(147,86,220,0.9) 100%);
+      box-shadow: 4px 4px 15px rgba(0,0,0, .5);
+      transition: all 0.2s ease;
+}
+
 /* Fin de mise en page du BOUTON */
 
 
@@ -205,6 +360,12 @@ footer {
 /* #logo_footer {
       Manque les modifications du svg
 }  */
+
+.ohmyfood {
+      fill: white;
+      width: 98px; 
+      height: 17px;
+}
 
 footer ul {
       margin: 0;

@@ -32,6 +32,52 @@ main a:visited {
       /* color: black; */
 }
 
+/* LOADER */
+
+.spinner {
+      position: absolute;
+      stroke: black;
+      stroke-dasharray: 50px;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgb(29, 29, 29);
+      z-index: 10;
+      animation: opacity 3s;
+      animation-fill-mode: forwards;
+}
+
+@keyframes opacity {
+      70% {
+            opacity: 1;
+      }
+      100% {
+            opacity: 0;
+      }
+}
+
+.loader {
+      animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+      0% {
+            transform: rotate(0deg);
+            stroke: #9356DC;
+      }
+
+      50% {
+            stroke: #FF79DA;
+      }
+
+      100% {
+            transform: rotate(360deg);
+            stroke: #9356DC;
+      }
+}
+
 
 /* Mise en page du TITRE */
 
@@ -109,7 +155,7 @@ main a:visited {
       font-weight: 300;
 }
 
-.explore button {
+.explore__button {
       width: 230px;
       height: 50px;
       margin: 15px auto;
@@ -121,6 +167,12 @@ main a:visited {
       font-weight: 500;
       cursor: pointer;
       box-shadow:4px 4px 10px rgba(0,0,0, .2);
+}
+
+.explore__button:hover {
+      background: linear-gradient(165deg, rgba(255, 121, 218, 0.9) 0%, rgba(147,86,220,0.9) 100%);
+      box-shadow: 4px 4px 15px rgba(0,0,0, .5);
+      transition: all 0.2s ease;
 }
 
 
@@ -208,7 +260,7 @@ main a:visited {
 
 .restaurants {
       background-color: rgb(247, 245, 245);
-      margin-bottom: 60px;
+      padding-bottom: 60px;
 }
 
 .restaurants h2 {
@@ -221,9 +273,9 @@ main a:visited {
 .container {
       width: 90%;
       margin: auto;
-      /* display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap; */
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
     }
 
 
@@ -250,7 +302,7 @@ main a:visited {
     }
     
 .card img {
-      width: 100%;
+      width: 350px;
       height: 200px;
       object-fit:cover;
     }
