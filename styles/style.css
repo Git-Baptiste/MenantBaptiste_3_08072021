@@ -56,7 +56,7 @@ main a:visited {
             opacity: 1;
       }
       100% {
-            display: none;
+            opacity: 0;
       }
 }
 
